@@ -13,3 +13,28 @@
 
 
 Zadacha21();
+
+
+
+        int num, rem, sum = 0, temp;
+        //clrscr();
+        Console.WriteLine("Является ли число палиндромом");
+        Console.Write("Введите число");
+        num = Convert.ToInt32(Console.ReadLine());
+        temp = num;
+        while (Convert.ToBoolean(num))
+        {
+            rem = num % 10;  
+            num = num / 10; 
+            sum = sum * 10 + rem; 
+        }
+        Console.WriteLine(sum);
+        if (temp == sum)
+        {
+            Console.WriteLine("Да");
+        }
+        else
+        {
+            Console.WriteLine("Нет");
+        }
+        Console.ReadLine();
